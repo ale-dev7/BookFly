@@ -1,97 +1,51 @@
-# Projektphasen
+# IHK-PROJEKT | PHASENÜBERSICHT
 
 ---
 
-# Phase 1: Projektinitiierung (Der Start)
+## 01 | PROJEKTINITIIERUNG
+> Formeller Rahmen und Projektstart
 
-In dieser Phase wird der formelle Rahmen des Projekts abgesteckt.
+*   **PROJEKTANTRAG (IHK)**
+    Das offizielle Dokument zur Genehmigung durch den Prüfungsausschuss. Ohne Freigabe kein Projektstart.
 
-## Projektantrag (IHK)
-
-**Warum hier?**
-
-Das ist das offizielle Dokument, das zunächst vom Prüfungsausschuss genehmigt werden muss, bevor das eigentliche Projekt beginnen darf.
-
----
-
-## Git-Repository (angelegt)
-
-**Warum hier?**
-
-Direkt nach der Genehmigung wird die technische Infrastruktur eingerichtet, damit von Beginn an eine saubere Versionsverwaltung und Dokumentation aller Codeänderungen gewährleistet ist.
+*   **GIT-REPOSITORY**
+    Sofortiger Aufbau der technischen Infrastruktur für lückenlose Versionierung von Tag 1 an.
 
 ---
 
-# Phase 2: Analysephase (Was soll gemacht werden?)
+## 02 | ANALYSEPHASE
+> Ermittlung der exakten Anforderungen aus fachlicher Sicht
 
-In dieser Phase werden die fachlichen Anforderungen an das Projekt ermittelt.
+*   **ANFORDERUNGSANALYSE (GROB)**
+    Erste Bestandsaufnahme der bestehenden Prozesse und Kernprobleme beim Kunden.
 
-## Anforderungsanalyse (grob)
+*   **LASTENHEFT**
+    Die finale Definition aller Anforderungen des Auftraggebers (reine Fachsicht).
 
-**Warum hier?**
-
-Zunächst werden die bestehenden Prozesse sowie die Probleme des Kunden analysiert, bevor eine detaillierte Dokumentation erstellt wird.
-
----
-
-## Lastenheft (Was?)
-
-**Warum hier?**
-
-Das Lastenheft beschreibt die fachlichen Anforderungen aus Sicht des Auftraggebers. Es bildet die Grundlage für die spätere technische Umsetzung und steht daher vor dem Pflichtenheft.
+*   **USE-CASE DIAGRAMM**
+    Visuelle Darstellung der Anforderungen aus der Perspektive der späteren Nutzer.
 
 ---
 
-## Use-Case-Diagramm (Anwendungsfalldiagramm)
+## 03 | PLANUNGSPHASE
+> Konkrete Umsetzung, Strukturierung und Terminierung
 
-**Warum hier?**
+*   **PFLICHTENHEFT**
+    Das technische Gegenstück zum Lastenheft. Beschreibt die konkrete Umsetzung (Entwicklersicht).
 
-Das Diagramm visualisiert die im Lastenheft definierten Anforderungen aus Sicht der späteren Benutzer (z. B. Firmenkunde oder Administrator).
+*   **PROJEKTSTRUKTURPLAN (PSP)**
+    Dekomposition des Gesamtprojekts in klar definierte, überschaubare Arbeitspakete.
 
----
-
-# Phase 3: Planungsphase (Wie wird es gemacht?)
-
-In dieser Phase wird die konkrete Umsetzung des Projekts geplant.
-
-## Pflichtenheft (Wie?)
-
-**Warum hier?**
-
-Das Pflichtenheft beschreibt die technische Umsetzung der Anforderungen aus dem Lastenheft und dient als Leitfaden für die Entwicklung.
+*   **MEILENSTEINE & NETZPLAN**
+    Terminierung der Arbeitspakete, Berechnung der Gesamtdauer und Identifikation des Kritischen Pfads.
 
 ---
 
-## Arbeitspakete & Projektstrukturplan (PSP)
+## 04 | ENTWURFSPHASE
+> Definition der Datenarchitektur und des Softwaredesigns
 
-**Warum hier?**
+*   **ENTITY-RELATIONSHIP-MODELL (ERM)**
+    Strukturierung der relationalen Datenbank (Tabellen & Relationen wie `bestell_id`) als Fundament der Applikation.
 
-Das Gesamtprojekt wird in kleinere, überschaubare Teilaufgaben und Arbeitspakete zerlegt. Dadurch lassen sich Aufwand und Fortschritt besser planen und kontrollieren.
-
----
-
-## Meilensteine & Netzplan
-
-**Warum hier?**
-
-Auf Basis der Arbeitspakete werden die Dauer der einzelnen Aufgaben sowie deren Abhängigkeiten bestimmt. Daraus ergeben sich der zeitliche Ablauf und der kritische Pfad des Projekts.
-
----
-
-# Phase 4: Entwurfsphase (Das technische Design)
-
-Bevor mit der Programmierung begonnen wird, wird die technische Architektur der Anwendung entworfen.
-
-## Entity-Relationship-Modell (ERM)
-
-**Warum hier?**
-
-Das ERM definiert die Struktur der relationalen Datenbank. Es beschreibt Tabellen, Primär- und Fremdschlüssel sowie deren Beziehungen und bildet die Grundlage für die gesamte Datenhaltung.
-
----
-
-## Klassendiagramm
-
-**Warum hier?**
-
-Das Klassendiagramm beschreibt die objektorientierte Struktur der Anwendung. Es legt Klassen, Attribute, Methoden und deren Beziehungen fest, damit die Daten aus dem ERM im Backend verarbeitet werden können.
+*   **KLASSENDIAGRAMM**
+    Objektorientiertes Design des Programmcodes für die spätere Verarbeitung der Daten im Backend.
