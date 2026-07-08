@@ -1,13 +1,13 @@
 ================================================================================
-IHK-PROJEKT | PHASENÜBERSICHT
+SCHULPROJEKT | PHASENÜBERSICHT (Nach IHK-Rahmen)
 ================================================================================
 
 01 | PROJEKTINITIIERUNG
 --------------------------------------------------------------------------------
 [ Formeller Rahmen und Projektstart ]
 
-* PROJEKTANTRAG (IHK)
-  Das offizielle Dokument zur Genehmigung durch den Prüfungsausschuss. 
+* PROJEKTANTRAG
+  Das offizielle Dokument zur schulinternen Genehmigung des Themas. 
   Ohne Freigabe kein Projektstart.
 
 * GIT-REPOSITORY
