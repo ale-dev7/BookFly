@@ -1,58 +1,63 @@
-📋 Projektdokumentation – Phasenübersicht
+================================================================================
+IHK-PROJEKT | PHASENÜBERSICHT
+================================================================================
+
+01 | PROJEKTINITIIERUNG
+--------------------------------------------------------------------------------
+[ Formeller Rahmen und Projektstart ]
+
+* PROJEKTANTRAG (IHK)
+  Das offizielle Dokument zur Genehmigung durch den Prüfungsausschuss. 
+  Ohne Freigabe kein Projektstart.
+
+* GIT-REPOSITORY
+  Sofortiger Aufbau der technischen Infrastruktur für lückenlose 
+  Versionierung von Tag 1 an.
 
 
-Übersicht über die Dokumente und Artefakte je Projektphase (IHK-Abschlussprojekt)
+02 | ANALYSEPHASE
+--------------------------------------------------------------------------------
+[ Ermittlung der exakten Anforderungen aus fachlicher Sicht ]
+
+* ANFORDERUNGSANALYSE (GROB)
+  Erste Bestandsaufnahme der bestehenden Prozesse und Kernprobleme beim Kunden.
+
+* LASTENHEFT
+  Die finale Definition aller Anforderungen des Auftraggebers (reine Fachsicht).
+
+* USE-CASE DIAGRAMM
+  Visuelle Darstellung der Anforderungen aus der Perspektive der späteren Nutzer.
 
 
+03 | PLANUNGSPHASE
+--------------------------------------------------------------------------------
+[ Konkrete Umsetzung, Strukturierung und Terminierung ]
 
-Inhaltsverzeichnis
+* PFLICHTENHEFT
+  Das technische Gegenstück zum Lastenheft. Beschreibt die konkrete 
+  Umsetzung (Entwicklersicht).
 
+* PROJEKTSTRUKTURPLAN (PSP)
+  Dekomposition des Gesamtprojekts in klar definierte, überschaubare 
+  Arbeitspakete.
 
-Phase 1: Projektinitiierung
-Phase 2: Analysephase
-Phase 3: Planungsphase
-Phase 4: Entwurfsphase
-
-
-
-Phase 1: Projektinitiierung (Der Start)
-
-
-In dieser Phase wird der formelle Rahmen des Projekts abgesteckt.
-
-
-
-DokumentBeschreibung✅ Projektantrag (IHK)Offizielles Dokument, das vom Prüfungsausschuss genehmigt werden muss, bevor das Projekt starten darf.✅ Git-RepositoryTechnische Infrastruktur für Versionierung und Code-Stände ab Tag 1.
+* MEILENSTEINE & NETZPLAN
+  Terminierung der Arbeitspakete, Berechnung der Gesamtdauer und 
+  Identifikation des Kritischen Pfads.
 
 
-Phase 2: Analysephase (Was soll gemacht werden?)
+04 | ENTWURFSPHASE
+--------------------------------------------------------------------------------
+[ Definition der Datenarchitektur und des Softwaredesigns ]
 
+* ENTITY-RELATIONSHIP-MODELL (ERM)
+  Strukturierung der relationalen Datenbank (Tabellen & Relationen 
+  wie bestell_id) als Fundament der Applikation.
 
-Ermittlung der genauen Anforderungen aus fachlicher Sicht.
+* KLASSENDIAGRAMM
+  Objektorientiertes Design des Programmcodes für die spätere 
+  Verarbeitung der Daten im Backend.
 
-
-
-DokumentBeschreibung✅ Anforderungsanalyse (grob)Grobe Analyse bestehender Prozesse und Probleme beim Kunden.✅ Lastenheft (Was?)Beschreibt die Anforderungen des Auftraggebers (fachliche Sicht) – steht immer vor dem Pflichtenheft.✅ Use-Case DiagrammVisualisiert die Anforderungen aus Nutzerperspektive (z. B. Firmenkunde, Admin).
-
-
-Phase 3: Planungsphase (Wie wird es gemacht?)
-
-
-Planung der konkreten Umsetzung, Struktur und Zeiträume.
-
-
-
-DokumentBeschreibung✅ Pflichtenheft (Wie?)Beschreibt die technische Umsetzung der Anforderungen aus dem Lastenheft (Entwicklersicht).✅ Arbeitspakete & PSPZerlegung des Gesamtprojekts in überschaubare Teilaufgaben.✅ Meilensteine & NetzplanZeitschätzung, Ablaufplanung und Kritischer Pfad auf Basis des PSP.
-
-
-Phase 4: Entwurfsphase (Das technische Design)
-
-
-Festlegung der Architektur von Daten und Code vor der Programmierung.
-
-
-
-DokumentBeschreibung✅ Entity-Relationship-Modell (ERM)Relationale Datenbankstruktur (Tabellen, Primär-/Fremdschlüssel wie bestell_id).✅ KlassendiagrammObjektorientierte Struktur des Codes (Klassen, Attribute, Methoden) zur Verarbeitung der ERM-Daten im Backend.
-
+================================================================================
 
 Letzte Aktualisierung: 08.07.2026
