@@ -4,7 +4,8 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Prüfen, ob ein Händler angemeldet ist 
-// http://localhost:8000/templates/index.php
+// http://localhost:8000/templates/index.php // php -S localhost:8000
+
 $isLoggedIn = isset($_SESSION['b2b_user_id']);
 ?>
 
