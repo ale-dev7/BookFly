@@ -1,10 +1,8 @@
+
 <?php
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-
-// Prüfen, ob ein Händler angemeldet ist 
-// http://localhost:8000/templates/index.php // php -S localhost:8000
 
 $isLoggedIn = isset($_SESSION['b2b_user_id']);
 ?>
@@ -23,18 +21,14 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
     <header class="b2b-header">
         <div class="header-top-bar">
             <span>B2B-Kundenservice: +49 (0) 30 12345678 | Mo–Fr 08:00–17:00 Uhr</span>
-            <div class="header-top-links">
-                <a href="#konditionen">Händler-Konditionen</a>
-                <a href="#hilfe">Hilfe & FAQ</a>
-            </div>
         </div>
         
         <div class="header-main container">
             <div class="logo">
                 <a href="index.php">
-                    <img src="../static/Bookfly-logo.png" alt="Bookfly Logo">
+                    <img src="../static/img/Bookfly-logo.png" alt="Bookfly Logo">
                 </a>
-                <span class="b2b-badge">B2B Portal</span>
+                <span class="b2b-badge">B2B</span>
             </div>
 
             <?php if ($isLoggedIn): ?>
@@ -70,14 +64,18 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
             <h1>Großhandel & Nachbestellungen für den Buchhandel</h1>
             <p>Profitieren Sie von attraktiven Händler-Rabatten, flexibler Rechnungsabwicklung und schneller Lieferung direkt aus unserem Zentrallager.</p>
             
-            <div class="hero-actions">
-                <?php if ($isLoggedIn): ?>
+            <?php if ($isLoggedIn): ?>
+                <!-- Für eingeloggte Nutzer: Direkter Schnellzugriff -->
+                <div class="hero-actions">
                     <a href="#schnellbestellung" class="btn btn-primary">ISBN-Schnellbestellung</a>
-                <?php else: ?>
-                    <a href="login.php" class="btn btn-primary">Jetzt Anmelden</a>
-                    <a href="register.php" class="btn btn-secondary">Als Händler registrieren</a>
-                <?php endif; ?>
-            </div>
+                </div>
+            <?php else: ?>
+                <!-- Für Gäste: Info-Text statt doppelter Buttons -->
+                <div class="hero-info-text">
+                    <p><strong>Exklusiv für Geschäftskunden:</strong> Einfache Verifizierung über Gewerbenachweis innerhalb von 24h.</p>
+                    <p><strong>Ihr zuverlässiger Partner für Verlags- und Buchhandelslogistik.</strong></p>
+                </div>
+            <?php endif; ?>
 
             <ul class="b2b-benefits">
                 <li>✓ Kauf auf Rechnung (30 Tage)</li>
@@ -178,7 +176,6 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
         <div class="container footer-grid">
             <div class="footer-col">
                 <h3>Bookfly B2B</h3>
-                <p>Ihr zuverlässiger Partner für Verlags- und Buchhandelslogistik.</p>
                 <p><small>© 2026 Bookfly GmbH<br>Eulenstraße 11 · 10115 Smaragdstadt</small></p>
             </div>
 
@@ -214,26 +211,3 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
     <script src="../static/js/script.js"></script>
 </body>
 </html>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const addRowBtn = document.querySelector('.quick-order-form .btn-small');
-    if (addRowBtn) {
-        addRowBtn.addEventListener('click', () => {
-            const form = document.querySelector('.quick-order-form');
-            const newRow = document.createElement('div');
-            newRow.className = 'form-row';
-            newRow.style.marginTop = '10px';
-            newRow.innerHTML = `
-                <input type="text" name="isbn[]" placeholder="ISBN (z.B. 978-3-16-148410-0)">
-                <input type="number" name="quantity[]" value="1" min="1" placeholder="Menge">
-                <button type="button" class="btn btn-small btn-danger" onclick="this.parentElement.remove()">✕</button>
-            `;
-            // Fügt die neue Zeile direkt vor dem Absende-Button ein
-            form.insertBefore(newRow, form.querySelector('button[type="submit"]'));
-        });
-    }
-});
-</script>
-
