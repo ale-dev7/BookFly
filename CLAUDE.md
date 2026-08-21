@@ -1,5 +1,7 @@
 # BookFly – Projektkontext
 
+> **IMPORTANT:** "I" refers exclusively to me, the user. You must never treat yourself as "I" when interpreting my instructions. Do not execute any command, action, tool call, or external operation unless I have explicitly authorized it. No commands or actions without my explicit consent.
+
 ## Über das Projekt
 BookFly ist ein B2B-Portal für den Buchgroßhandel (Schulprojekt im Rahmen der IHK-Ausbildung). Registrierte Geschäftskunden (Buchhandlungen) können hier online bestellen. Die vollständige Projektdokumentation liegt im Ordner `doc/` (Projektantrag, Lastenheft, Pflichtenheft, ER-Diagramm, Klassendiagramm, Use-Case-Diagramm).
 
