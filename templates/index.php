@@ -17,46 +17,7 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
 </head>
 <body>
 
-    <!-- ================= HEADER ================= -->
-    <header class="b2b-header">
-        <div class="header-top-bar">
-            <span>B2B-Kundenservice: +49 (0) 30 12345678 | Mo–Fr 08:00–17:00 Uhr</span>
-        </div>
-        
-        <div class="header-main container">
-            <div class="logo">
-                <a href="index.php">
-                    <img src="../static/img/Bookfly-logo.png" alt="Bookfly Logo">
-                </a>
-                <span class="b2b-badge">B2B</span>
-            </div>
-
-            <?php if ($isLoggedIn): ?>
-                <!-- NUR FÜR ANGEMELDETE HÄNDLER -->
-                <div class="header-search">
-                    <form action="index.php" method="GET">
-                        <input type="text" name="query" placeholder="Suchen nach ISBN, Titel, Autor..." required>
-                        <button type="submit">Suchen</button>
-                    </form>
-                </div>
-
-                <div class="header-actions">
-                    <a href="dashboard.php" class="btn btn-outline">Mein Konto</a>
-                    <a href="cart.php" class="cart-btn">
-                        <span>Warenkorb</span>
-                        <span class="cart-count">(<?php echo $_SESSION['cart_count'] ?? 0; ?>)</span>
-                    </a>
-                    <a href="logout.php" class="btn btn-logout">Abmelden</a>
-                </div>
-            <?php else: ?>
-                <!-- NUR FÜR GÄSTE (NICHT EINGELOGGT) -->
-                <div class="header-actions">
-                    <a href="login.php" class="btn btn-outline">Händler-Login</a>
-                    <a href="register.php" class="btn btn-primary">Als Händler registrieren</a>
-                </div>
-            <?php endif; ?>
-        </div>
-    </header>
+    <?php require_once __DIR__ . '/header.php'; ?>
 
     <!-- ================= HERO BEREICH ================= -->
     <section class="b2b-hero">
@@ -172,42 +133,10 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
     </main>
 
     <!-- ================= FOOTER ================= -->
-    <footer class="b2b-footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h3>Bookfly B2B</h3>
-                <p><small>© 2026 Bookfly GmbH<br>Eulenstraße 11 · 10115 Smaragdstadt</small></p>
-            </div>
 
-            <div class="footer-col">
-                <h4>Geschäftskunden-Service</h4>
-                <ul>
-                    <li><a href="#">Händler-Konditionen & Staffeln</a></li>
-                    <li><a href="#">Liefer- & Versandkonditionen</a></li>
-                    <li><a href="#">Zahlungsarten & SEPA</a></li>
-                    <li><a href="#">EDI / API-Schnittstellen</a></li>
-                </ul>
-            </div>
+    <?php require_once __DIR__ . '/footer.php'; ?>
 
-            <div class="footer-col">
-                <h4>Rechtliches (B2B)</h4>
-                <ul>
-                    <li><a href="#">AGB für Geschäftskunden</a></li>
-                    <li><a href="#">Widerrufsbelehrung (B2B)</a></li>
-                    <li><a href="#">Datenschutz</a></li>
-                    <li><a href="#">Impressum</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>B2B-Supportzeiten</h4>
-                <p>Montag – Freitag: 08:00 – 17:00 Uhr<br>
-                E-Mail: b2b@bookfly.de<br>
-                Tel: +49 (0) 30 12345678</p>
-            </div>
-        </div>
-    </footer>
-
+    
     <script src="../static/js/script.js"></script>
 </body>
 </html>
