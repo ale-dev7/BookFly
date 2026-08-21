@@ -1,5 +1,4 @@
 
-
 <footer class="b2b-footer">
         <div class="container footer-grid">
             <div class="footer-col">

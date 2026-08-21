@@ -17,6 +17,8 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
 </head>
 <body>
 
+    <!-- ================= HEADER ================= -->
+     
     <?php require_once __DIR__ . '/header.php'; ?>
 
     <!-- ================= HERO BEREICH ================= -->
