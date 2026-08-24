@@ -565,3 +565,53 @@ a:hover {
 .btn-danger:hover {
     background-color: #b71c1c;
 }
+
+/* Admin Login Layout */
+.admin-login-wrapper {
+    max-width: 400px;
+    margin: 80px auto 0 auto;
+}
+
+.admin-login-card {
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-login-title {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.alert-danger {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-full {
+    width: 100%;
+    padding: 10px;
+}
