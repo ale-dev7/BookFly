@@ -91,7 +91,12 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img src="https://via.placeholder.com/50x70" alt="Cover" class="thumb"></td>
+                            <td>
+                                <svg width="50" height="70" class="thumb" viewBox="0 0 50 70" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="50" height="70" fill="#e9ecef" stroke="#ced4da" rx="3"/>
+                                    <text x="25" y="39" text-anchor="middle" font-size="9" fill="#6c757d" font-family="sans-serif">Cover</text>
+                                </svg>
+                            </td>
                             <td>
                                 <strong>Beispiel-Buchtitel 01</strong><br>
                                 <small>Autor Name | ISBN: 978-3-123456-78-9</small>
