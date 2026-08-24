@@ -121,7 +121,7 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
                 <div class="info-grid">
                     <div class="info-card">
                         <h3>B2B-Kundenservice</h3>
-                        <p>Mo–Fr: 08:00 – 17:00 Uhr<br>Telefon: +49 (0) 30 12345678<br>E-Mail: b2b@bookfly.de</p>
+                        <p>Mo-Fr: 08:00 - 17:00 Uhr<br>Telefon: +49 (0) 30 12345678<br>E-Mail: b2b@bookfly.de</p>
                     </div>
                     <div class="info-card">
                         <h3>Vorteile für Buchhandlungen</h3>
