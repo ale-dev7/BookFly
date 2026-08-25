@@ -96,6 +96,21 @@ a:hover {
     color: #ffffff;
 }
 
+.btn-outline-danger {
+    background-color: transparent;
+    border: 1px solid #e63946;
+    color: #e63946;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-outline-danger:hover {
+    background-color: #e63946;
+    color: #ffffff;
+}
+
 .btn-logout {
     background-color: #e63946;
     color: #ffffff;

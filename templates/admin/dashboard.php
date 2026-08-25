@@ -3,13 +3,22 @@ require_once __DIR__ . '/../../includes/admin_auth.php';
 require_once __DIR__ . '/../../includes/db.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'], $_POST['haendler_id'])) {
-    $newStatus = ($_POST['action'] === 'activate') ? 'active' : 'suspended';
-    
-    $stmt = $pdo->prepare('UPDATE haendler SET status = ? WHERE id = ?');
-    $stmt->execute([$newStatus, (int)$_POST['haendler_id']]);
-    
-    $_SESSION['flash_message'] = "Händler-Status wurde erfolgreich geändert.";
-    
+    $haendlerId = (int)$_POST['haendler_id'];
+
+    if ($_POST['action'] === 'delete') {
+        $stmt = $pdo->prepare('DELETE FROM haendler WHERE id = ?');
+        $stmt->execute([$haendlerId]);
+
+        $_SESSION['flash_message'] = "Händler wurde gelöscht.";
+    } else {
+        $newStatus = ($_POST['action'] === 'activate') ? 'active' : 'suspended';
+
+        $stmt = $pdo->prepare('UPDATE haendler SET status = ? WHERE id = ?');
+        $stmt->execute([$newStatus, $haendlerId]);
+
+        $_SESSION['flash_message'] = "Händler-Status wurde erfolgreich geändert.";
+    }
+
     header('Location: dashboard.php');
     exit;
 }
@@ -80,10 +89,15 @@ $haendlerList = $stmt->fetchAll();
                                     <?php if ($h['status'] === 'pending' || $h['status'] === 'suspended'): ?>
                                         <button type="submit" name="action" value="activate" class="btn btn-success">Freischalten</button>
                                     <?php endif; ?>
-                                    
+
                                     <?php if ($h['status'] === 'active'): ?>
                                         <button type="submit" name="action" value="suspend" class="btn btn-danger">Sperren</button>
                                     <?php endif; ?>
+
+                                    <!-- Neuer Löschen-Button mit Sicherheitsabfrage -->
+                                    <button type="submit" name="action" value="delete" class="btn btn-outline-danger" onclick="return confirm('Möchtest du diesen Händler wirklich unwiderruflich löschen?');">
+                                        Löschen
+                                    </button>
                                 </form>
                             </td>
                         </tr>
