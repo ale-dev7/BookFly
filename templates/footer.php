@@ -28,7 +28,16 @@
 
             <div class="footer-col">
                 <h4>B2B-Supportzeiten</h4>
-                <p>Montag - Freitag: 08:00 - 17:00 Uhr<br>
+               <dl class="hours-list">
+                    <dt>Montag - Freitag</dt>
+                    <dd>08:00 - 17:00 Uhr</dd>
+
+                    <dt>Samstag</dt>
+                    <dd>08:00 - 13:00 Uhr</dd>
+
+                    <dt>Sonntag</dt>
+                    <dd>Geschlossen</dd>
+               </dl>
                 E-Mail: b2b@bookfly.de<br>
                 Tel: +49 (0) 30 12345678</p>
             </div>

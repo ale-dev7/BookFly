@@ -47,6 +47,21 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
             </ul>
         </div>
     </section>
+        <!-- ================= VERTRAUENSSIGNALE ================= -->
+        <section class="trust-section">
+            <div class="container">
+                <p class="trust-label">Vertraut von über 200 Buchhandlungen</p>
+                <div class="trust-logos">
+                    <img src="../static/img/Firmenlogo_1.png" alt="Partner-Logo 1">
+                    <img src="../static/img/Firmenlogo_2.png" alt="Partner-Logo 2">
+                </div>
+                <div class="trust-stats">
+                    <div><strong>200+</strong> Geschäftspartner</div>
+                    <div><strong>48h</strong> Lieferzeit</div>
+                </div>
+            </div>
+        </section>
+
 
     <!-- ================= HAUPTBEREICH (MAIN) ================= -->
     <main class="container main-content">
@@ -68,6 +83,34 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
                 </form>
             </section>
 
+
+            <!-- 1.5 Produktkategorien-Grid (Nur für eingeloggte Händler) -->
+            <section class="category-section">
+                <h2>Unsere Sortimentsbereiche</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <img src="../static/img/Belletristik.png" alt="Belletristik">
+                        <h3>Belletristik</h3>
+                        <p>ab 20 Stück: -15%</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../static/img/Fachbücher.png" alt="Fachbücher">
+                        <h3>Fachbücher</h3>
+                        <p>ab 10 Stück: -10%</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../static/img/Schulbücher.png" alt="Schulbücher">
+                        <h3>Schulbücher</h3>
+                        <p>ab 50 Stück: -20%</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../static/img/Kinderbücher.png" alt="Kinderbücher">
+                        <h3>Kinderbücher</h3>
+                        <p>ab 20 Stück: -15%</p>
+                    </div>
+                </div>
+            </section>
+                        
             <!-- 2. B2B Katalog / Produktübersicht (Nur für eingeloggte Händler) -->
             <section class="b2b-catalog">
                 <div class="catalog-header">
@@ -92,10 +135,7 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
                     <tbody>
                         <tr>
                             <td>
-                                <svg width="50" height="70" class="thumb" viewBox="0 0 50 70" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="50" height="70" fill="#e9ecef" stroke="#ced4da" rx="3"/>
-                                    <text x="25" y="39" text-anchor="middle" font-size="9" fill="#6c757d" font-family="sans-serif">Cover</text>
-                                </svg>
+                                <img src="../static/img/Beispiel.png" alt="Cover Beispiel-Buchtitel 01" class="thumb">
                             </td>
                             <td>
                                 <strong>Beispiel-Buchtitel 01</strong><br>
