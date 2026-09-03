@@ -7,7 +7,6 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
 $errors = [];
 $success = false;
 
-// Initialize form fields with defaults
 $fields = [
     'firma' => '', 'ansprechpartner' => '', 'ust_idnr' => '',
     'strasse_hausnummer' => '', 'plz' => '', 'ort' => '',
@@ -15,7 +14,7 @@ $fields = [
 ];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Trim all posted text fields at once
+    
     foreach ($fields as $key => $default) {
         $fields[$key] = trim($_POST[$key] ?? $default);
     }
