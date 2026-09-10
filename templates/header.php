@@ -6,7 +6,7 @@
 
         <div class="header-main container">
             <div class="logo">
-                <a href="index.php"><img src="../static/img/Bookfly-logo.png" alt="Bookfly Logo"></a>
+                <a href="index.php"><img src="../static/img/bookfly-logo.png" alt="Bookfly Logo"></a>
                 <span class="b2b-badge">B2B</span>
                 <span class="portal-label">Geschäftskunden-Portal</span>
             </div>

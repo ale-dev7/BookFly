@@ -52,8 +52,8 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
             <div class="container">
                 <p class="trust-label">Vertraut von über 200 Buchhandlungen</p>
                 <div class="trust-logos">
-                    <img src="../static/img/Firmenlogo_1.png" alt="Partner-Logo 1">
-                    <img src="../static/img/Firmenlogo_2.png" alt="Partner-Logo 2">
+                    <img src="../static/img/firmenlogo_1.png" alt="Partner-Logo 1">
+                    <img src="../static/img/firmenlogo_2.png" alt="Partner-Logo 2">
                 </div>
                 <div class="trust-stats">
                     <div><strong>200+</strong> Geschäftspartner</div>
@@ -89,22 +89,22 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
                 <h2>Unsere Sortimentsbereiche</h2>
                 <div class="category-grid">
                     <div class="category-card">
-                        <img src="../static/img/Belletristik.png" alt="Belletristik">
+                        <img src="../static/img/belletristik.png" alt="Belletristik">
                         <h3>Belletristik</h3>
                         <p>ab 20 Stück: -15%</p>
                     </div>
                     <div class="category-card">
-                        <img src="../static/img/Fachbücher.png" alt="Fachbücher">
+                        <img src="../static/img/fachbuecher.png" alt="Fachbücher">
                         <h3>Fachbücher</h3>
                         <p>ab 10 Stück: -10%</p>
                     </div>
                     <div class="category-card">
-                        <img src="../static/img/Schulbücher.png" alt="Schulbücher">
+                        <img src="../static/img/schulbuecher.png" alt="Schulbücher">
                         <h3>Schulbücher</h3>
                         <p>ab 50 Stück: -20%</p>
                     </div>
                     <div class="category-card">
-                        <img src="../static/img/Kinderbücher.png" alt="Kinderbücher">
+                        <img src="../static/img/kinderbuecher.png" alt="Kinderbücher">
                         <h3>Kinderbücher</h3>
                         <p>ab 20 Stück: -15%</p>
                     </div>
@@ -135,7 +135,7 @@ $isLoggedIn = isset($_SESSION['b2b_user_id']);
                     <tbody>
                         <tr>
                             <td>
-                                <img src="../static/img/Beispiel.png" alt="Cover Beispiel-Buchtitel 01" class="thumb">
+                                <img src="../static/img/beispiel.png" alt="Cover Beispiel-Buchtitel 01" class="thumb">
                             </td>
                             <td>
                                 <strong>Beispiel-Buchtitel 01</strong><br>
